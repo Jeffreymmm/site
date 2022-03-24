@@ -5,7 +5,13 @@ export default defineConfig({
     type: 'none',
   },
   routes: [
-    { path: '/', component: '@/pages/index' },
+    {
+      path: '/',
+      component: '@/pages/index',
+      routes: [
+        { path: ':id', component: '@/pages/tabList/index' },
+      ],
+    },
   ],
   fastRefresh: {},
   antd: {

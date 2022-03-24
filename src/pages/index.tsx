@@ -8,9 +8,9 @@ import {
   UploadOutlined,
 } from '@ant-design/icons';
 import styles from './index.less';
-import HeaderPage from './header'
+import HeaderPage from '../component/header';
 const { Header, Sider, Content } = Layout;
-export default function IndexPage() {
+export default function IndexPage(props:any) {
   const state = {
     collapsed: false,
   };
@@ -32,7 +32,7 @@ export default function IndexPage() {
               nav 1
             </Menu.Item>
             <Menu.Item key="2" icon={<VideoCameraOutlined />}>
-              nav 2
+              nav 2 
             </Menu.Item>
             <Menu.Item key="3" icon={<UploadOutlined />}>
               nav 3
@@ -54,177 +54,7 @@ export default function IndexPage() {
               overflow:`auto`,
             }}
           >
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>    <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>    <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>    <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>    <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>    <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>    <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>    <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>    <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>    <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>    <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>    <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
-            <div>Content</div>
+          { props.children }
           </Content>
         </Layout>
       </Layout>
